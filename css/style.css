@@ -1,9 +1,30 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miniver';
+    src: url('../fonts/Miniver-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
 :root{
     /* Colors */
     --white-color: #ffffff;
     --dark-color: #0a0a0f;
-    --primary-color: #121218;
-    --secondary-color: #6366f1;
+    --primary-color: #1f1d1b;
+    --secondary-color: #cdab81;
     --light-gray-color: #f4f4f5;
     --medium-gray-color: #ccc;
 
@@ -30,16 +51,259 @@
     --site-max-width: 1400px;
 }
 
-div:first-of-type{
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    background-color: var(--light-gray-color);
+ul{
+    list-style-type: none;
 }
 
-div{
-    width: 200px;
-    height: 200px;
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+.section-content{
     margin: 0 auto;
-    background-color: var(--medium-gray-color);
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* Para que los titulos "h2" de cada seccion tengan un estilo unico*/
+.section-title{
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+.section-title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background-color: var(--secondary-color);
+}
+
+header{
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+header .navbar{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-logo .logo-text{
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 12px;
+    font-size: var(--font-size-m);
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    transition: .3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/* ?Para que cuando se tenga vista Desktop, desaparezcan los botones */
+.navbar :where(#menu-close-button, #menu-open-button){
+    display: none;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.hero-section .section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+}
+
+.hero-section .hero-details{
+    width: 70%;
+}
+
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle{
+    margin-top: 8px;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    width: 80%;
+}
+
+.hero-section .hero-details .description{
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+    width: 80%;
+    text-align: justify;
+}
+
+.hero-section .hero-details .buttons{
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .button{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-m);
+    font-weight: var(--font-weight-medium);
+    transition: .3s ease;
+}
+
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background-color: transparent;
+}
+
+.hero-section .hero-details .contact-us:hover{
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.hero-section .hero-image-wrapper{
+    max-width: 450px;
+    margin-right: 30px;
+}
+
+
+
+/* !======================MEDIA QUERIES====================== */
+@media screen and (max-width: 900px) {
+    :root{
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    body.show-mobile-menu{
+        overflow: hidden;
+    }
+
+    /*Para que se de un efecto de fondo borroso al presionar el menu hamburguesa*/
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar :where(#menu-close-button, #menu-open-button){
+        display: block;
+        font-size: var(--font-size-l);
+    }
+
+    .navbar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar #menu-open-button{
+        color: var(--white-color);
+    }
+
+    .navbar .nav-menu{
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background-color: var(--white-color);
+        transition: left .2s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav-menu{
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link{
+        color: var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
+
+    /* Se acomodan los elementos de manera que sea amigable para movil */
+    .hero-section .section-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        padding: 30px 20px 20px;
+    }
+
+    /* Para que el tamaño del subtitulo y el parrafo, tomen el ancho disponible */
+    .hero-section .hero-details :is(.subtitle, .description),
+    .about-section .about-details{
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons{
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper{
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    .hero-section .hero-details .subtitle{
+        width: 100%;
+    }
+
+    .hero-section .hero-details .description{
+        width: 100%;
+    }
 }
