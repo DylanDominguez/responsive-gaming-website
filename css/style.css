@@ -207,6 +207,63 @@ header .navbar{
     margin-right: 30px;
 }
 
+.about-section{
+    padding: 120px 0;
+    background-color: var(--light-gray-color);
+}
+
+.about-section .section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-section .about-image-wrapper .about-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.about-section .about-details .section-title{
+    padding: 0;
+}
+
+.about-section .about-details{
+    max-width: 50%;
+}
+
+.about-section .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.about-section .social-link-list{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link{
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: .2s ease;
+}
+
+.about-section .social-link-list .social-link:hover{
+    color: var(--secondary-color);
+}
+
+.menu-section{
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    padding: 50px 0 100px;
+}
+
+
 
 
 /* !======================MEDIA QUERIES====================== */
@@ -305,5 +362,18 @@ header .navbar{
 
     .hero-section .hero-details .description{
         width: 100%;
+    }
+
+    /*Seccion About*/
+    .about-section .section-content{
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
     }
 }
