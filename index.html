@@ -6,6 +6,7 @@
     <title>Informacion de los mejores Videojuegos | DylanDev</title>
     <!--Link de Font-Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -132,10 +133,164 @@
                 </ul>
             </div>
         </section>
+
+        <!--Seccion Testimonials-->
+        <section class="testimonials-section">
+            <h2 class="section-title">Reseñas</h2>
+            <div class="section-content">
+                <!--Se coloca segunda clase "swiper" para que funcione el slider-->
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <!--Se coloca segunda clase "swiper-wrapper" para que funcione el slider-->
+                        <ul class="testimonials-list swiper-wrapper">
+                            <!--Item 1-->
+                            <!--Aqui se coloca el slide, como segunda clase llamada "swiper-slide" para cada elemento "li"-->
+                            <li class="testimonial swiper-slide">
+                                <img src="image/people/1.avif" alt="User" class="user-image">
+                                <h3 class="name">Alejandro Torres</h3>
+                                <i class="feedback">"La variedad de títulos y la rapidez de carga de esta web son increíbles. Mi sitio de referencia diario."</i>
+                            </li>
+
+                            <!--Item 2-->
+                            <li class="testimonial swiper-slide">
+                                <img src="image/people/5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Andrés Castro</h3>
+                                <i class="feedback">"La mejor web de videojuegos que he visitado este año. El contenido se actualiza constantemente."</i>
+                            </li>
+
+                            <!--Item 3-->
+                            <li class="testimonial swiper-slide">
+                                <img src="image/people/3.avif" alt="User" class="user-image">
+                                <h3 class="name">Diego Navarro</h3>
+                                <i class="feedback">"Encontré las guías exactas que necesitaba para pasarme el nivel más difícil. Una comunidad de diez."</i>
+                            </li>
+
+                            <!--Item 4-->
+                            <li class="testimonial swiper-slide">
+                                <img src="image/people/4.avif" alt="User" class="user-image">
+                                <h3 class="name">Javier Peralta</h3>
+                                <i class="feedback">"Los análisis de juegos son muy honestos y acertados. Me han ahorrado mucho dinero antes de comprar."</i>
+                            </li>
+
+                            <!--Item 5-->
+                            <li class="testimonial swiper-slide">
+                                <img src="image/people/2.avif" alt="User" class="user-image">
+                                <h3 class="name">Sofía Medina</h3>
+                                <i class="feedback">"Me encanta el diseño de la página. Es súper intuitiva y siempre encuentro las últimas noticias del gaming."</i>
+                            </li>
+                        </ul>
+
+                        <!--Para que aparezcan botones para pasar a la siguiente imagen-->
+                        <!--La segunda clase como: "swiper-pagination, swiper-button-prev, swiper-button-next" son parte de la misma pagina de Swipper-->
+                        <div class="swiper-pagination"></div>
+
+                        <!--La primera clase "swiper-slide-button" es para estilizarlo con mis propios colores y diseños-->
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion Gallery-->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Mis Preferidos</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <!--Item 1-->
+                    <li class="gallery-item">
+                        <img src="image/games/requiem.avif" alt="Resident Evil Requiem" class="gallery-image">
+                    </li>
+
+                    <!--Item 2-->
+                    <li class="gallery-item">
+                        <img src="image/games/gta-6.jpg" alt="GTA 6" class="gallery-image">
+                    </li>
+
+                    <!--Item 3-->
+                    <li class="gallery-item">
+                        <img src="image/games/forza.webp" alt="Forza Horizon 6" class="gallery-image">
+                    </li>
+
+                    <!--Item 4-->
+                    <li class="gallery-item">
+                        <img src="image/games/MK1.jpeg" alt="MK1" class="gallery-image">
+                    </li>
+
+                    <!--Item 5-->
+                    <li class="gallery-item">
+                        <img src="image/games/hades-2.avif" alt="Hades 2" class="gallery-image">
+                    </li>
+
+                    <!--Item 6-->
+                    <li class="gallery-item">
+                        <img src="image/games/supremo.avif" alt="HellDivers2" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Seccion Contact Us-->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <!--Item 1-->
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Prolongación Zarumila #1071</p>
+                    </li>
+
+                    <!--Item 2-->
+                    <li class="contact-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>dylandomperez1802@gmail.com</p>
+                    </li>
+
+                    <!--Item 3-->
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+51) 963 854 572</p>
+                    </li>
+
+                    <!--Item 4-->
+                    <li class="contact-info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Dylan David Dominguez Perez</p>
+                    </li>
+
+                    <!--Item 5-->
+                    <li class="contact-info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>ddominguez1802</p>
+                    </li>
+
+                    <!--Item 6-->
+                    <li class="contact-info">
+                        <i class="fa-brands fa-square-linkedin"></i>
+                        <p>DYLAN DAVID DOMINGUEZ PEREZ</p>
+                    </li>
+
+                    <!--Item 7-->
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.DylanDev.com</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your message" class="form-input" required></textarea>
+                    <button class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer></footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
