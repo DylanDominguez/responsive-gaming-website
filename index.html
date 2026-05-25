@@ -23,19 +23,19 @@
                     <a href="#" class="nav-link">Principal</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Acerca De</a>
+                    <a href="#acerca" class="nav-link">Acerca De</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Top</a>
+                    <a href="#top" class="nav-link">Top</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonios</a>
+                    <a href="#resenia" class="nav-link">Reseñas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Galería</a>
+                    <a href="#preferidos" class="nav-link">Preferidos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contacto</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
                 </li>
             </ul>
 
@@ -55,7 +55,7 @@
 
                     <div class="buttons">
                         <a href="#" class="button order-now">Ordena Ahora</a>
-                        <a href="#" class="button contact-us">Contáctanos</a>
+                        <a href="#contacto" class="button contact-us">Contáctanos</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
@@ -65,7 +65,7 @@
         </section>
 
         <!--Seccion About-->
-        <section class="about-section">
+        <section class="about-section" id="acerca">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="image/about-pict.webp" alt="About" class="about-image">
@@ -90,7 +90,7 @@
         </section>
 
         <!--Seccion Menu-->
-        <section class="menu-section">
+        <section class="menu-section" id="top">
             <h2 class="section-title">Top Juegos</h2>
             <div class="section-content">
                 <ul class="menu-list">
@@ -135,7 +135,7 @@
         </section>
 
         <!--Seccion Testimonials-->
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="resenia">
             <h2 class="section-title">Reseñas</h2>
             <div class="section-content">
                 <!--Se coloca segunda clase "swiper" para que funcione el slider-->
@@ -193,7 +193,7 @@
         </section>
 
         <!--Seccion Gallery-->
-        <section class="gallery-section" id="gallery">
+        <section class="gallery-section" id="preferidos">
             <h2 class="section-title">Mis Preferidos</h2>
             <div class="section-content">
                 <ul class="gallery-list">
@@ -231,7 +231,7 @@
         </section>
 
         <!--Seccion Contact Us-->
-        <section class="contact-section" id="contact">
+        <section class="contact-section" id="contacto">
             <h2 class="section-title">Contáctanos</h2>
             <div class="section-content">
                 <ul class="contact-info-list">
@@ -270,12 +270,6 @@
                         <i class="fa-brands fa-square-linkedin"></i>
                         <p>DYLAN DAVID DOMINGUEZ PEREZ</p>
                     </li>
-
-                    <!--Item 7-->
-                    <li class="contact-info">
-                        <i class="fa-solid fa-globe"></i>
-                        <p>www.DylanDev.com</p>
-                    </li>
                 </ul>
 
                 <form action="#" class="contact-form">
@@ -288,7 +282,24 @@
         </section>
     </main>
 
-    <footer></footer>
+    <!--Seccion Footer-->
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">&copy; 2026 Gaming Shop</p>
+
+            <div class="social-link-list">
+                <a href="https://www.facebook.com/profile.php?id=100009434160639" target="_blank" class="social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ddominguez1802/" target="_blank" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dylan-david-dominguez-perez-3a5742350/" target="_blank" class="social-link">
+                    <i class="fa-brands fa-square-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
