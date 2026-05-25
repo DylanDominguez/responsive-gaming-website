@@ -32,7 +32,7 @@ Este proyecto fue desarrollado para practicar:
 ---
 
 ## 📌 Estado del proyecto
-🚧 En desarrollo
+🔚​ Finalizado
 
 ---
 
