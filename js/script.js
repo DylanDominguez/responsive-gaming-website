@@ -15,6 +15,32 @@ navLinks.forEach(link => {
   link.addEventListener("click", () => menuOpenButton.click())
 });
 
+/* Modal functionality */
+const orderBtn = document.querySelector("#order-now-btn");
+const modal = document.querySelector("#order-modal");
+const modalCloseBtn = document.querySelector("#modal-close-btn");
+const modalConfirmBtn = document.querySelector("#modal-confirm-btn");
+
+function openModal() {
+    modal.classList.add("show");
+    document.body.style.overflow = "hidden";
+}
+
+function closeModal() {
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+}
+
+orderBtn.addEventListener("click", openModal);
+
+modalCloseBtn.addEventListener("click", closeModal);
+
+modalConfirmBtn.addEventListener("click", closeModal);
+
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+});
+
 const swiper = new Swiper('.slider-wrapper', {
   loop: true,
   //Para que cuando el cursor del mouse se acerque a cualquier item, se cambie de flecha a una mano

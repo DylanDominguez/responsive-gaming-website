@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informacion de los mejores Videojuegos | DylanDev</title>
-    <!--Link de Font-Awesome-->
+    <title>Todo para tus consolas | Tienda Gamer - DylanDev</title>
+    <meta name="description" content="Descubre los mejores videojuegos para consolas y PC en nuestra tienda gamer. Catálogo exclusivo, reseñas reales y atención personalizada. ¡Encuentra tu próxima aventura!">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="videojuegos, tienda gamer, juegos PC, juegos consola, elden ring, god of war, gaming, tienda videojuegos">
+    <meta name="author" content="Dylan David Dominguez Perez">
+    <link rel="canonical" href="https://dylandev.github.io/responsive-gaming-website/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Todo para tus consolas | Tienda Gamer - DylanDev">
+    <meta property="og:description" content="Descubre los mejores videojuegos para consolas y PC. Catálogo exclusivo con los títulos que realmente quieres jugar.">
+    <meta property="og:image" content="https://dylandev.github.io/responsive-gaming-website/image/hero_pacman.png">
+    <meta property="og:url" content="https://dylandev.github.io/responsive-gaming-website/">
+    <meta property="og:locale" content="es_PE">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Todo para tus consolas | Tienda Gamer - DylanDev">
+    <meta name="twitter:description" content="Descubre los mejores videojuegos para consolas y PC. Catálogo exclusivo con los títulos que realmente quieres jugar.">
+    <meta name="twitter:image" content="https://dylandev.github.io/responsive-gaming-website/image/hero_pacman.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Gaming Shop - DylanDev",
+        "description": "Tienda especializada en videojuegos para consolas y PC",
+        "url": "https://dylandev.github.io/responsive-gaming-website/",
+        "image": "https://dylandev.github.io/responsive-gaming-website/image/hero_pacman.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Prolongación Zarumila #1071",
+            "addressCountry": "PE"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+51-963854572",
+            "email": "dylandomperez1802@gmail.com",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=100009434160639",
+            "https://www.instagram.com/ddominguez1802/",
+            "https://www.linkedin.com/in/dylan-david-dominguez-perez-3a5742350/"
+        ]
+    }
+    </script>
+
+    <!--Links-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -49,17 +97,17 @@
         <section class="hero-section">
             <div class="section-content">
                 <div class="hero-details">
-                    <h2 class="title">Todo para tus consolas</h2>
+                    <h1 class="title">Todo para tus consolas</h1>
                     <h3 class="subtitle">El espacio ideal donde encuentras los títulos que realmente quieres jugar!</h3>
                     <p class="description">¡Te damos la bienvenida a tu nuevo rincón gamer favorito! Somos una tienda pequeña con un gran corazón, creada por y para apasionados de los videojuegos. Aquí no solo encontrarás una selección exclusiva con los mejores títulos para tus consolas y PC, sino también una atención personalizada que no hallarás en las grandes cadenas. Explora nuestro catálogo, encuentra tu próxima gran aventura y únete a nuestra comunidad.</p>
 
                     <div class="buttons">
-                        <a href="#" class="button order-now">Ordena Ahora</a>
+                        <a href="javascript:void(0)" class="button order-now" id="order-now-btn">Ordena Ahora</a>
                         <a href="#contacto" class="button contact-us">Contáctanos</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
-                    <img src="image/hero_pacman.png" alt="Hero" class="hero-image">
+                    <img src="image/hero_pacman.png" alt="Pac-Man personaje clásico de videojuegos" class="hero-image">
                 </div>
             </div>
         </section>
@@ -68,20 +116,20 @@
         <section class="about-section" id="acerca">
             <div class="section-content">
                 <div class="about-image-wrapper">
-                    <img src="image/about-pict.webp" alt="About" class="about-image">
+                    <img src="image/about-pict.webp" alt="Colección de videojuegos clásicos y modernos" class="about-image" loading="lazy">
                 </div>
                 <div class="about-details">
                     <h2 class="section-title">Acerca De</h2>
                     <p class="text">Nuestra historia es simple: nació del amor por los videojuegos y el deseo de crear un espacio donde cada jugador se sienta como en casa. Pasamos de ser coleccionistas y jugadores apasionados a fundar esta pequeña tienda con un objetivo claro: ofrecer una alternativa cercana, honesta y accesible frente a las grandes corporaciones. Para nosotros, cada cliente no es un número más, sino un compañero de equipo con el que compartimos la misma pasión por el gaming.
                     </p>
                     <div class="social-link-list">
-                        <a href="https://www.facebook.com/profile.php?id=100009434160639" target="_blank" class="social-link">
+                        <a href="https://www.facebook.com/profile.php?id=100009434160639" target="_blank" rel="noopener noreferrer" class="social-link">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/ddominguez1802/" target="_blank" class="social-link">
+                        <a href="https://www.instagram.com/ddominguez1802/" target="_blank" rel="noopener noreferrer" class="social-link">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/dylan-david-dominguez-perez-3a5742350/" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/dylan-david-dominguez-perez-3a5742350/" target="_blank" rel="noopener noreferrer" class="social-link">
                             <i class="fa-brands fa-square-linkedin"></i>
                         </a>
                     </div>
@@ -96,37 +144,37 @@
                 <ul class="menu-list">
                     <!--Item 1-->
                     <li class="menu-item">
-                        <img src="image/elden-ring.png" alt="elden ring" class="menu-image">
+                        <img src="image/elden-ring.png" alt="Portada de Elden Ring - RPG de fantasía oscura" class="menu-image" loading="lazy">
                         <h3 class="name">Elden Ring</h3>
                         <p class="text">Épico RPG de mundo abierto y fantasía oscura.</p>
                     </li>
                     <!--Item 2-->
                     <li class="menu-item">
-                        <img src="image/arc-raiders.png" alt="arc raiders" class="menu-image">
+                        <img src="image/arc-raiders.png" alt="Portada de Arc Raiders - Shooter cooperativo" class="menu-image" loading="lazy">
                         <h3 class="name">Arc Raiders</h3>
                         <p class="text">Shooter cooperativo de supervivencia contra máquinas alienígenas.</p>
                     </li>
                     <!--Item 3-->
                     <li class="menu-item">
-                        <img src="image/marvel-rivals.png" alt="Marvel Rivals" class="menu-image">
+                        <img src="image/marvel-rivals.png" alt="Portada de Marvel Rivals - Shooter de héroes" class="menu-image" loading="lazy">
                         <h3 class="name">Marvel Rivals</h3>
                         <p class="text">Shooter de héroes con batallas entre personajes de Marvel.</p>
                     </li>
                     <!--Item 4-->
                     <li class="menu-item">
-                        <img src="image/colossus.png" alt="Shadow of the colossus" class="menu-image">
+                        <img src="image/colossus.png" alt="Portada de Shadow of the Colossus - Aventura épica" class="menu-image" loading="lazy">
                         <h3 class="name">Shadow of the Colossus</h3>
                         <p class="text">Emotiva aventura para derrotar a dieciséis colosos gigantes.</p>
                     </li>
                     <!--Item 5-->
                     <li class="menu-item">
-                        <img src="image/mortal-kombat.png" alt="Mortal Kombat" class="menu-image">
+                        <img src="image/mortal-kombat.png" alt="Portada de Mortal Kombat - Juego de peleas" class="menu-image" loading="lazy">
                         <h3 class="name">Mortal Kombat</h3>
                         <p class="text">El juego de peleas más sangriento de todos.</p>
                     </li>
                     <!--Item 6-->
                     <li class="menu-item">
-                        <img src="image/god-of-war.png" alt="God of War" class="menu-image">
+                        <img src="image/god-of-war.png" alt="Portada de God of War - Mitología nórdica" class="menu-image" loading="lazy">
                         <h3 class="name">God of War</h3>
                         <p class="text">Brutal viaje cinematográfico por la mitología nórdica.</p>
                     </li>
@@ -146,35 +194,35 @@
                             <!--Item 1-->
                             <!--Aqui se coloca el slide, como segunda clase llamada "swiper-slide" para cada elemento "li"-->
                             <li class="testimonial swiper-slide">
-                                <img src="image/people/1.avif" alt="User" class="user-image">
+                                <img src="image/people/1.avif" alt="Foto de perfil de Alejandro Torres" class="user-image" loading="lazy">
                                 <h3 class="name">Alejandro Torres</h3>
                                 <i class="feedback">"La variedad de títulos y la rapidez de carga de esta web son increíbles. Mi sitio de referencia diario."</i>
                             </li>
 
                             <!--Item 2-->
                             <li class="testimonial swiper-slide">
-                                <img src="image/people/5.jpg" alt="User" class="user-image">
+                                <img src="image/people/5.jpg" alt="Foto de perfil de Andrés Castro" class="user-image" loading="lazy">
                                 <h3 class="name">Andrés Castro</h3>
                                 <i class="feedback">"La mejor web de videojuegos que he visitado este año. El contenido se actualiza constantemente."</i>
                             </li>
 
                             <!--Item 3-->
                             <li class="testimonial swiper-slide">
-                                <img src="image/people/3.avif" alt="User" class="user-image">
+                                <img src="image/people/3.avif" alt="Foto de perfil de Diego Navarro" class="user-image" loading="lazy">
                                 <h3 class="name">Diego Navarro</h3>
                                 <i class="feedback">"Encontré las guías exactas que necesitaba para pasarme el nivel más difícil. Una comunidad de diez."</i>
                             </li>
 
                             <!--Item 4-->
                             <li class="testimonial swiper-slide">
-                                <img src="image/people/4.avif" alt="User" class="user-image">
+                                <img src="image/people/4.avif" alt="Foto de perfil de Javier Peralta" class="user-image" loading="lazy">
                                 <h3 class="name">Javier Peralta</h3>
                                 <i class="feedback">"Los análisis de juegos son muy honestos y acertados. Me han ahorrado mucho dinero antes de comprar."</i>
                             </li>
 
                             <!--Item 5-->
                             <li class="testimonial swiper-slide">
-                                <img src="image/people/2.avif" alt="User" class="user-image">
+                                <img src="image/people/2.avif" alt="Foto de perfil de Sofía Medina" class="user-image" loading="lazy">
                                 <h3 class="name">Sofía Medina</h3>
                                 <i class="feedback">"Me encanta el diseño de la página. Es súper intuitiva y siempre encuentro las últimas noticias del gaming."</i>
                             </li>
@@ -199,32 +247,32 @@
                 <ul class="gallery-list">
                     <!--Item 1-->
                     <li class="gallery-item">
-                        <img src="image/games/requiem.avif" alt="Resident Evil Requiem" class="gallery-image">
+                        <img src="image/games/requiem.avif" alt="Resident Evil Requiem - videojuego de terror" class="gallery-image" loading="lazy">
                     </li>
 
                     <!--Item 2-->
                     <li class="gallery-item">
-                        <img src="image/games/gta-6.jpg" alt="GTA 6" class="gallery-image">
+                        <img src="image/games/gta-6.jpg" alt="GTA 6 - Grand Theft Auto" class="gallery-image" loading="lazy">
                     </li>
 
                     <!--Item 3-->
                     <li class="gallery-item">
-                        <img src="image/games/forza.webp" alt="Forza Horizon 6" class="gallery-image">
+                        <img src="image/games/forza.webp" alt="Forza Horizon 6 - juego de carreras" class="gallery-image" loading="lazy">
                     </li>
 
                     <!--Item 4-->
                     <li class="gallery-item">
-                        <img src="image/games/MK1.jpeg" alt="MK1" class="gallery-image">
+                        <img src="image/games/MK1.jpeg" alt="Mortal Kombat 1 - juego de lucha" class="gallery-image" loading="lazy">
                     </li>
 
                     <!--Item 5-->
                     <li class="gallery-item">
-                        <img src="image/games/hades-2.avif" alt="Hades 2" class="gallery-image">
+                        <img src="image/games/hades-2.avif" alt="Hades 2 - videojuego de acción roguelike" class="gallery-image" loading="lazy">
                     </li>
 
                     <!--Item 6-->
                     <li class="gallery-item">
-                        <img src="image/games/supremo.avif" alt="HellDivers2" class="gallery-image">
+                        <img src="image/games/supremo.avif" alt="Helldivers 2 - shooter cooperativo" class="gallery-image" loading="lazy">
                     </li>
                 </ul>
             </div>
@@ -272,11 +320,11 @@
                     </li>
                 </ul>
 
-                <form action="#" class="contact-form">
-                    <input type="text" placeholder="Your name" class="form-input" required>
-                    <input type="email" placeholder="Your email" class="form-input" required>
-                    <textarea placeholder="Your message" class="form-input" required></textarea>
-                    <button class="submit-button">Enviar</button>
+                <form action="https://formspree.io/f/maqkpbbe" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your name" class="form-input" required>
+                    <input type="email" name="email" placeholder="Your email" class="form-input" required>
+                    <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
+                    <button type="submit" class="submit-button">Enviar</button>
                 </form>
             </div>
         </section>
@@ -288,20 +336,29 @@
             <p class="copyright-text">&copy; 2026 Gaming Shop</p>
 
             <div class="social-link-list">
-                <a href="https://www.facebook.com/profile.php?id=100009434160639" target="_blank" class="social-link">
+                <a href="https://www.facebook.com/profile.php?id=100009434160639" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/ddominguez1802/" target="_blank" class="social-link">
+                <a href="https://www.instagram.com/ddominguez1802/" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/dylan-david-dominguez-perez-3a5742350/" target="_blank" class="social-link">
+                <a href="https://www.linkedin.com/in/dylan-david-dominguez-perez-3a5742350/" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fa-brands fa-square-linkedin"></i>
                 </a>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <div id="order-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn fas fa-times" id="modal-close-btn"></button>
+            <h2 class="modal-title">Ordena Ahora</h2>
+            <p class="modal-text">Lo sentimos, la función de ordenar no está disponible por el momento. ¡Estamos trabajando para ofrecerte el mejor servicio pronto!</p>
+            <button class="button modal-confirm-btn" id="modal-confirm-btn">Entendido</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
