@@ -1,4 +1,4 @@
-# 🎮 Responsive Gaming Website
+# DEMO
 
 https://dylandominguez.github.io/responsive-gaming-website/
 
